@@ -12,4 +12,5 @@ members = [
     "roman-to-integer",
     "string-to-integer-atoi",
     "two-sum",
+    "valid-parentheses",
 ]
