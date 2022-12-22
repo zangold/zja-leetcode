@@ -1,0 +1,24 @@
+repos:
+-   repo: local
+    hooks:
+      - id: fmt
+        name: fmt
+        language: system
+        types: [file, rust]
+        entry: cargo fmt -- --check
+        pass_filenames: false
+
+      - id: clippy
+        name: clippy
+        language: system
+        types: [file, rust]
+        entry: cargo clippy --bins --tests --examples --all -- -D rust_2018_idioms -D warnings
+        pass_filenames: false
+
+      - id: test
+        name: test
+        language: system
+        types: [file, rust]
+        entry: cargo test --lib
+        pass_filenames: false
+
