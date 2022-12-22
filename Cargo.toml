@@ -9,4 +9,5 @@ members = [
     "palindrome-number",
     "powx-n",
     "regular-expression-matching",
+    "roman-to-integer",
 ]
