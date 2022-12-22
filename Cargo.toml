@@ -5,4 +5,5 @@ members = [
     "longest-common-prefix",
     "longest-palindromic-substring",
     "longest-substring-without-repeating-characters",
+    "median-of-two-sorted-arrays",
 ]
