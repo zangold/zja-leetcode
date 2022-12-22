@@ -6,47 +6,50 @@ struct Solution;
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
-    pub next: Option<Box<ListNode>>
+    pub next: Option<Box<ListNode>>,
 }
 
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode {
-            next: None,
-            val
-        }
+        ListNode { next: None, val }
     }
 
     fn new_next(val: i32, next: Option<Box<ListNode>>) -> Self {
-        ListNode {
-            next,
-            val
-        }
+        ListNode { next, val }
     }
 }
 
 impl Solution {
-    fn add_helper(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>, carry: i32) -> Option<Box<ListNode>> {
+    fn add_helper(
+        l1: Option<Box<ListNode>>,
+        l2: Option<Box<ListNode>>,
+        carry: i32,
+    ) -> Option<Box<ListNode>> {
         match (l1, l2) {
             (Some(n1), Some(n2)) => {
                 let sum = n1.val + n2.val + carry;
-                Some(Box::new(ListNode { val: sum % 10, next: Solution::add_helper(n1.next, n2.next, sum / 10) }))
-            },
+                Some(Box::new(ListNode {
+                    val: sum % 10,
+                    next: Solution::add_helper(n1.next, n2.next, sum / 10),
+                }))
+            }
             (Some(n), None) | (None, Some(n)) => {
                 let sum = n.val + carry;
-                Some(Box::new(ListNode { val: sum % 10, next: Solution::add_helper(n.next, None, sum / 10) }))
-            },
-            (None, None) if carry != 0 => {
-                Some(Box::new(ListNode::new(carry)))
+                Some(Box::new(ListNode {
+                    val: sum % 10,
+                    next: Solution::add_helper(n.next, None, sum / 10),
+                }))
             }
-            (None, None) => {
-                None
-            }
+            (None, None) if carry != 0 => Some(Box::new(ListNode::new(carry))),
+            (None, None) => None,
         }
     }
 
-    pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn add_two_numbers(
+        l1: Option<Box<ListNode>>,
+        l2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
         Solution::add_helper(l1, l2, 0)
     }
 }
@@ -55,7 +58,10 @@ fn list_from_slice(digits: &[i32]) -> Option<Box<ListNode>> {
     match digits.len() {
         0 => None,
         1 => Some(Box::new(ListNode::new(digits[0]))),
-        _ => Some(Box::new(ListNode::new_next(digits[0], list_from_slice(&digits[1..])))),
+        _ => Some(Box::new(ListNode::new_next(
+            digits[0],
+            list_from_slice(&digits[1..]),
+        ))),
     }
 }
 

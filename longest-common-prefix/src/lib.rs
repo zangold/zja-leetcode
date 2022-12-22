@@ -10,7 +10,7 @@ impl Solution {
             let mut c: Option<char> = None;
 
             for str in &mut strs[..] {
-                if str.len() == 0 {
+                if str.is_empty() {
                     return prefix;
                 }
 
@@ -35,7 +35,10 @@ mod tests {
     use super::*;
 
     fn test_helper(strs: Vec<&str>, expected: &str) {
-        assert_eq!(Solution::longest_common_prefix(strs.into_iter().map(|x| x.to_string()).collect()), expected.to_string())
+        assert_eq!(
+            Solution::longest_common_prefix(strs.into_iter().map(|x| x.to_string()).collect()),
+            expected.to_string()
+        )
     }
 
     #[test]
