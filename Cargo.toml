@@ -7,4 +7,5 @@ members = [
     "longest-substring-without-repeating-characters",
     "median-of-two-sorted-arrays",
     "palindrome-number",
+    "powx-n",
 ]
