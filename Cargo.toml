@@ -11,4 +11,5 @@ members = [
     "regular-expression-matching",
     "roman-to-integer",
     "string-to-integer-atoi",
+    "two-sum",
 ]
