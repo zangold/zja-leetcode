@@ -8,4 +8,5 @@ members = [
     "median-of-two-sorted-arrays",
     "palindrome-number",
     "powx-n",
+    "regular-expression-matching",
 ]
