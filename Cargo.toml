@@ -3,4 +3,5 @@ members = [
     "add-two-numbers",
     "integer-to-roman",
     "longest-common-prefix",
+    "longest-palindromic-substring",
 ]
