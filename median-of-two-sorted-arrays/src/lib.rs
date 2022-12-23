@@ -24,7 +24,7 @@ impl Solution {
             .copied()
             .collect::<Vec<i32>>();
 
-        all_elements.sort();
+        all_elements.sort_unstable();
 
         println!("all_elements: {:?}", all_elements);
 
@@ -99,7 +99,7 @@ mod tests {
             .copied()
             .collect::<Vec<i32>>();
 
-        all_elements.sort();
+        all_elements.sort_unstable();
 
         if all_elements.len() % 2 == 0 {
             // Average of the middle two elements
@@ -141,8 +141,8 @@ mod tests {
                     .map(|_| rand::thread_rng().gen_range(0..100))
                     .collect::<Vec<i32>>();
 
-                v1.sort();
-                v2.sort();
+                v1.sort_unstable();
+                v2.sort_unstable();
 
                 println!("v1 = {:?}", v1);
                 println!("v2 = {:?}", v2);
