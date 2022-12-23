@@ -11,6 +11,7 @@ members = [
     "palindrome-number",
     "powx-n",
     "regular-expression-matching",
+    "remove-duplicates-from-sorted-array",
     "reverse-integer",
     "roman-to-integer",
     "sqrtx",
