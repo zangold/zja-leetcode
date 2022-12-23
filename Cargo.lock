@@ -117,6 +117,10 @@ name = "string-to-integer-atoi"
 version = "0.1.0"
 
 [[package]]
+name = "three-sum"
+version = "0.1.0"
+
+[[package]]
 name = "two-sum"
 version = "0.1.0"
 
