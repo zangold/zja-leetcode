@@ -113,6 +113,10 @@ name = "roman-to-integer"
 version = "0.1.0"
 
 [[package]]
+name = "sqrtx"
+version = "0.1.0"
+
+[[package]]
 name = "string-to-integer-atoi"
 version = "0.1.0"
 

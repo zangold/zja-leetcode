@@ -12,6 +12,7 @@ members = [
     "regular-expression-matching",
     "reverse-integer",
     "roman-to-integer",
+    "sqrtx",
     "string-to-integer-atoi",
     "three-sum",
     "two-sum",
