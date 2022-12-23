@@ -101,6 +101,10 @@ name = "regular-expression-matching"
 version = "0.1.0"
 
 [[package]]
+name = "reverse-integer"
+version = "0.1.0"
+
+[[package]]
 name = "roman-to-integer"
 version = "0.1.0"
 
