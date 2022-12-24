@@ -6,6 +6,7 @@ members = [
     "domino-and-tromino-tiling",
     "first-missing-positive",
     "integer-to-roman",
+    "letter-combinations-of-a-phone-number",
     "longest-common-prefix",
     "longest-palindromic-substring",
     "longest-substring-without-repeating-characters",
