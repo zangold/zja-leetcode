@@ -13,6 +13,7 @@ members = [
     "max-points-on-a-line",
     "median-of-two-sorted-arrays",
     "merge-k-sorted-lists",
+    "merge-sorted-array",
     "merge-two-sorted-lists",
     "palindrome-number",
     "plus-one",

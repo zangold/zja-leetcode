@@ -81,6 +81,10 @@ name = "merge-k-sorted-lists"
 version = "0.1.0"
 
 [[package]]
+name = "merge-sorted-array"
+version = "0.1.0"
+
+[[package]]
 name = "merge-two-sorted-lists"
 version = "0.1.0"
 
