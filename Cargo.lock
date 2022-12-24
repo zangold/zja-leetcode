@@ -66,6 +66,10 @@ name = "longest-substring-without-repeating-characters"
 version = "0.1.0"
 
 [[package]]
+name = "max-points-on-a-line"
+version = "0.1.0"
+
+[[package]]
 name = "median-of-two-sorted-arrays"
 version = "0.1.0"
 dependencies = [
