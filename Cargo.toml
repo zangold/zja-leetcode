@@ -4,6 +4,7 @@ members = [
     "climb-stairs",
     "container-with-most-water",
     "domino-and-tromino-tiling",
+    "first-missing-positive",
     "integer-to-roman",
     "longest-common-prefix",
     "longest-palindromic-substring",
