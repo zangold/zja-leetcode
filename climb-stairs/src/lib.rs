@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 struct Solution;
 
 impl Solution {
@@ -10,7 +12,9 @@ impl Solution {
 
         let mut i = 1;
         while i < n {
-            (a, b) = (b, a + b);
+            let (a_next, b_next) = (b, a + b);
+            a = a_next;
+            b = b_next;
             i += 1;
         }
 
