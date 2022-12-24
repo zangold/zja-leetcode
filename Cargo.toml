@@ -10,6 +10,7 @@ members = [
     "merge-k-sorted-lists",
     "merge-two-sorted-lists",
     "palindrome-number",
+    "plus-one",
     "powx-n",
     "regular-expression-matching",
     "remove-duplicates-from-sorted-array",

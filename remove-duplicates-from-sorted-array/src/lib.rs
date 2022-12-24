@@ -32,7 +32,7 @@ fn naive_solution(nums: &[i32]) -> Vec<i32> {
 fn do_test(nums: &[i32]) {
     let naive = naive_solution(nums);
 
-    let mut v: Vec<i32> = nums.iter().copied().collect();
+    let mut v: Vec<i32> = nums.to_vec();
     let k = Solution::remove_duplicates(&mut v) as usize;
 
     // Solution shouldn't change the length of the vector it was given.

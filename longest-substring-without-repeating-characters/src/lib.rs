@@ -9,7 +9,7 @@ impl Solution {
         let mut cursor = (0, 0);
         let mut present: [bool; 256] = [false; 256];
 
-        let char_index = |c| (c as u8) as usize;
+        let char_index = |c| c as usize;
 
         loop {
             // First, expand the substring to the right until just before we get two of the same
