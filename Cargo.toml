@@ -24,4 +24,5 @@ members = [
     "three-sum",
     "two-sum",
     "valid-parentheses",
+    "wildcard-matching",
 ]
