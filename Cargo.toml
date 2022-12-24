@@ -3,6 +3,7 @@ members = [
     "add-two-numbers",
     "climb-stairs",
     "container-with-most-water",
+    "domino-and-tromino-tiling",
     "integer-to-roman",
     "longest-common-prefix",
     "longest-palindromic-substring",
