@@ -25,6 +25,7 @@ members = [
     "regular-expression-matching",
     "remove-duplicates-from-sorted-array",
     "reverse-integer",
+    "reverse-string",
     "roman-to-integer",
     "sqrtx",
     "string-to-integer-atoi",
