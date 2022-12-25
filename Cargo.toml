@@ -17,6 +17,7 @@ members = [
     "merge-k-sorted-lists",
     "merge-sorted-array",
     "merge-two-sorted-lists",
+    "minimum-window-substring",
     "palindrome-number",
     "plus-one",
     "powx-n",

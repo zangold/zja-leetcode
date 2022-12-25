@@ -97,6 +97,10 @@ name = "merge-two-sorted-lists"
 version = "0.1.0"
 
 [[package]]
+name = "minimum-window-substring"
+version = "0.1.0"
+
+[[package]]
 name = "palindrome-number"
 version = "0.1.0"
 
