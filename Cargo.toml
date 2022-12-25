@@ -3,6 +3,7 @@ members = [
     "add-two-numbers",
     "climb-stairs",
     "container-with-most-water",
+    "divide-two-integers",
     "domino-and-tromino-tiling",
     "first-missing-positive",
     "integer-to-roman",

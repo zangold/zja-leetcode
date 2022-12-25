@@ -21,6 +21,10 @@ name = "container-with-most-water"
 version = "0.1.0"
 
 [[package]]
+name = "divide-two-integers"
+version = "0.1.0"
+
+[[package]]
 name = "domino-and-tromino-tiling"
 version = "0.1.0"
 
