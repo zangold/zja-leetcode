@@ -10,6 +10,7 @@ members = [
     "longest-common-prefix",
     "longest-increasing-path-in-a-matrix",
     "longest-palindromic-substring",
+    "longest-subsequence-with-limited-sum",
     "longest-substring-without-repeating-characters",
     "max-points-on-a-line",
     "median-of-two-sorted-arrays",
