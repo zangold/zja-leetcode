@@ -8,6 +8,7 @@ members = [
     "integer-to-roman",
     "letter-combinations-of-a-phone-number",
     "longest-common-prefix",
+    "longest-increasing-path-in-a-matrix",
     "longest-palindromic-substring",
     "longest-substring-without-repeating-characters",
     "max-points-on-a-line",

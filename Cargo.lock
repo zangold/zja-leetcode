@@ -58,6 +58,10 @@ name = "longest-common-prefix"
 version = "0.1.0"
 
 [[package]]
+name = "longest-increasing-path-in-a-matrix"
+version = "0.1.0"
+
+[[package]]
 name = "longest-palindromic-substring"
 version = "0.1.0"
 
