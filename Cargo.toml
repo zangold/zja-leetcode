@@ -7,6 +7,7 @@ members = [
     "domino-and-tromino-tiling",
     "first-missing-positive",
     "integer-to-roman",
+    "jump-game",
     "letter-combinations-of-a-phone-number",
     "longest-common-prefix",
     "longest-increasing-path-in-a-matrix",
