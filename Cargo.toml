@@ -17,6 +17,7 @@ members = [
     "longest-subsequence-with-limited-sum",
     "longest-substring-without-repeating-characters",
     "max-points-on-a-line",
+    "max-sliding-window",
     "median-of-two-sorted-arrays",
     "merge-k-sorted-lists",
     "merge-sorted-array",
