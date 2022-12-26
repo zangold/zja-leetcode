@@ -33,6 +33,10 @@ name = "domino-and-tromino-tiling"
 version = "0.1.0"
 
 [[package]]
+name = "find-the-index-of-the-first-occurrence-in-a-string"
+version = "0.1.0"
+
+[[package]]
 name = "first-missing-positive"
 version = "0.1.0"
 
