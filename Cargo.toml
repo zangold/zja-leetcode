@@ -31,6 +31,7 @@ members = [
     "reverse-string",
     "roman-to-integer",
     "search-insert-position",
+    "set-matrix-zeroes",
     "sqrtx",
     "string-to-integer-atoi",
     "three-sum",
