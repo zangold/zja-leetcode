@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "add-two-numbers",
+    "binary-tree-inorder-traversal",
     "climb-stairs",
     "container-with-most-water",
     "count-of-smaller-numbers-after-self",
