@@ -102,6 +102,10 @@ name = "max-sliding-window"
 version = "0.1.0"
 
 [[package]]
+name = "maximum-bags-with-full-capacity-of-rocks"
+version = "0.1.0"
+
+[[package]]
 name = "median-of-two-sorted-arrays"
 version = "0.1.0"
 dependencies = [

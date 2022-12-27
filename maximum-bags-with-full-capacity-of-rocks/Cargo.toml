@@ -1,5 +1,5 @@
 [package]
-name = "binary-tree-inorder-traversal"
+name = "maximum-bags-with-full-capacity-of-rocks"
 version = "0.1.0"
 edition = "2021"
 

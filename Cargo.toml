@@ -19,6 +19,7 @@ members = [
     "longest-substring-without-repeating-characters",
     "max-points-on-a-line",
     "max-sliding-window",
+    "maximum-bags-with-full-capacity-of-rocks",
     "median-of-two-sorted-arrays",
     "merge-k-sorted-lists",
     "merge-sorted-array",
