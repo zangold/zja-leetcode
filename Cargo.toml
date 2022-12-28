@@ -38,6 +38,7 @@ members = [
     "set-matrix-zeroes",
     "sqrtx",
     "string-to-integer-atoi",
+    "symmetric-tree",
     "three-sum",
     "two-sum",
     "valid-palindrome",
