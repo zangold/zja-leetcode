@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "add-two-numbers",
+    "all-paths-from-source-to-target",
     "binary-tree-inorder-traversal",
     "climb-stairs",
     "container-with-most-water",
