@@ -16,7 +16,7 @@ impl Solution {
     }
 
     pub fn is_palindrome(x: i32) -> bool {
-        Solution::str_palindrome(&format!("{x}").chars().collect::<Vec<char>>()[..])
+        Self::str_palindrome(&format!("{x}").chars().collect::<Vec<char>>()[..])
     }
 }
 

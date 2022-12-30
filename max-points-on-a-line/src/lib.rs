@@ -41,7 +41,7 @@ impl Solution {
                 // Find the slope (direction of the line) in lowest terms, so that we can determine
                 // if a point 'x' is on our line when x - base is an integer multiple of slope.
                 let slope = (p.0 - base.0, p.1 - base.1);
-                let gcd = Solution::gcd(slope.0.abs(), slope.1.abs());
+                let gcd = Self::gcd(slope.0.abs(), slope.1.abs());
                 let slope = (slope.0 / gcd, slope.1 / gcd);
 
                 let orig_len = points_copy.len();

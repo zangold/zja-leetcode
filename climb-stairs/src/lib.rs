@@ -22,22 +22,22 @@ impl Solution {
     }
 
     const ARRAY_LEN: usize = 46;
-    const fn init_solution_table() -> [i32; Solution::ARRAY_LEN] {
-        let mut table = [0; Solution::ARRAY_LEN];
+    const fn init_solution_table() -> [i32; Self::ARRAY_LEN] {
+        let mut table = [0; Self::ARRAY_LEN];
 
         let mut i = 0;
         while i < table.len() {
-            table[i] = Solution::fib(i);
+            table[i] = Self::fib(i);
             i += 1;
         }
 
         table
     }
 
-    const SOLUTIONS: [i32; Solution::ARRAY_LEN] = Solution::init_solution_table();
+    const SOLUTIONS: [i32; Self::ARRAY_LEN] = Self::init_solution_table();
 
     pub fn climb_stairs(n: i32) -> i32 {
-        Solution::SOLUTIONS[n as usize]
+        Self::SOLUTIONS[n as usize]
     }
 }
 

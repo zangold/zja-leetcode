@@ -25,7 +25,7 @@ impl Solution {
                 return;
             }
 
-            let expanded = Solution::expand(&sc[..], start, end);
+            let expanded = Self::expand(&sc[..], start, end);
 
             if expanded.len() > longest.len() {
                 longest = expanded;

@@ -7,8 +7,8 @@ struct BTreeMultiSet<T> {
 }
 
 impl<T: Ord + Copy> BTreeMultiSet<T> {
-    pub fn new() -> BTreeMultiSet<T> {
-        BTreeMultiSet::<T> {
+    pub fn new() -> Self {
+        Self {
             map: BTreeMap::<T, usize>::new(),
         }
     }

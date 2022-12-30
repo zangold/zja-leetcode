@@ -10,10 +10,8 @@ impl Solution {
 
         match haystack[haystack.len() / 2] {
             value if value == needle => true,
-            value if value < needle => {
-                Solution::contains(&haystack[haystack.len() / 2 + 1..], needle)
-            }
-            _ => Solution::contains(&haystack[..haystack.len() / 2], needle),
+            value if value < needle => Self::contains(&haystack[haystack.len() / 2 + 1..], needle),
+            _ => Self::contains(&haystack[..haystack.len() / 2], needle),
         }
     }
 
@@ -36,7 +34,7 @@ impl Solution {
                     continue;
                 }
 
-                if Solution::contains(&nums[b + 1..nums.len()], -nums[a] - nums[b]) {
+                if Self::contains(&nums[b + 1..nums.len()], -nums[a] - nums[b]) {
                     results.push(vec![nums[a], nums[b], -nums[a] - nums[b]]);
                 }
             }

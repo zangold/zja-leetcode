@@ -14,22 +14,22 @@ impl Solution {
         let mut best = 1i32;
 
         if a > 0 && matrix[a - 1][b] > v {
-            Solution::helper(matrix, dp, a - 1, b);
+            Self::helper(matrix, dp, a - 1, b);
             best = i32::max(best, dp[a - 1][b] + 1);
         }
 
         if a < matrix.len() - 1 && matrix[a + 1][b] > v {
-            Solution::helper(matrix, dp, a + 1, b);
+            Self::helper(matrix, dp, a + 1, b);
             best = i32::max(best, dp[a + 1][b] + 1);
         }
 
         if b > 0 && matrix[a][b - 1] > v {
-            Solution::helper(matrix, dp, a, b - 1);
+            Self::helper(matrix, dp, a, b - 1);
             best = i32::max(best, dp[a][b - 1] + 1);
         }
 
         if b < matrix[0].len() - 1 && matrix[a][b + 1] > v {
-            Solution::helper(matrix, dp, a, b + 1);
+            Self::helper(matrix, dp, a, b + 1);
             best = i32::max(best, dp[a][b + 1] + 1);
         }
 
@@ -45,7 +45,7 @@ impl Solution {
 
         for a in 0..matrix.len() {
             for b in 0..matrix[0].len() {
-                Solution::helper(&matrix, &mut dp, a, b);
+                Self::helper(&matrix, &mut dp, a, b);
                 longest = i32::max(dp[a][b], longest);
             }
         }

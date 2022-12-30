@@ -15,16 +15,16 @@ impl Solution {
         let mid = (*range.end() - *range.start()) / 2 + *range.start();
 
         if mid * mid > x {
-            Solution::find_sqrt(x, *range.start()..=mid - 1)
+            Self::find_sqrt(x, *range.start()..=mid - 1)
         } else if mid * mid <= x && (mid + 1) * (mid + 1) > x {
             mid as i32
         } else {
-            Solution::find_sqrt(x, mid + 1..=*range.end())
+            Self::find_sqrt(x, mid + 1..=*range.end())
         }
     }
 
     pub fn my_sqrt(x: i32) -> i32 {
-        Solution::find_sqrt(x as u64, 0..=x as u64)
+        Self::find_sqrt(x as u64, 0..=x as u64)
     }
 }
 

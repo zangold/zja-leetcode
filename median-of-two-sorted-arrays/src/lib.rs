@@ -43,14 +43,14 @@ impl Solution {
     // Checks base cases. If a base case was found, returns Some(f64), otherwise None.
     fn find_median_base(nums1: &[i32], nums2: &[i32]) -> Option<f64> {
         match (nums1.len(), nums2.len()) {
-            (x, _) if x <= 2 => Some(Solution::find_median_merge(nums1, nums2)),
-            (_, y) if y <= 2 => Some(Solution::find_median_merge(nums2, nums1)),
+            (x, _) if x <= 2 => Some(Self::find_median_merge(nums1, nums2)),
+            (_, y) if y <= 2 => Some(Self::find_median_merge(nums2, nums1)),
             (_, _) => None,
         }
     }
 
     fn find_median_recursive(nums1: &[i32], nums2: &[i32]) -> f64 {
-        if let Some(median) = Solution::find_median_base(nums1, nums2) {
+        if let Some(median) = Self::find_median_base(nums1, nums2) {
             return median;
         }
 
@@ -69,13 +69,13 @@ impl Solution {
         // arrays is still the same.
         if nums1[r1] < nums2[r2] {
             // remove from the bottom of nums1 and from the top of nums2
-            Solution::find_median_recursive(
+            Self::find_median_recursive(
                 &nums1[remove_elements..],
                 &nums2[..nums2.len() - remove_elements],
             )
         } else {
             // remove from the bottom of nums2 and from the top of nums1
-            Solution::find_median_recursive(
+            Self::find_median_recursive(
                 &nums2[remove_elements..],
                 &nums1[..nums1.len() - remove_elements],
             )
@@ -83,7 +83,7 @@ impl Solution {
     }
 
     pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
-        Solution::find_median_recursive(&nums1[..], &nums2[..])
+        Self::find_median_recursive(&nums1[..], &nums2[..])
     }
 }
 

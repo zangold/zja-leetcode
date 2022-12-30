@@ -7,14 +7,14 @@ use std::rc::Rc;
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
     pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
+    pub left: Option<Rc<RefCell<Self>>>,
+    pub right: Option<Rc<RefCell<Self>>>,
 }
 
 impl TreeNode {
     #[inline]
     pub fn new(val: i32) -> Self {
-        TreeNode {
+        Self {
             val,
             left: None,
             right: None,
@@ -32,16 +32,16 @@ impl Solution {
 
         if let Some(ref rt) = node {
             let t = rt.borrow();
-            Solution::helper(inorder, &t.left);
+            Self::helper(inorder, &t.left);
             inorder.push(t.val);
-            Solution::helper(inorder, &t.right);
+            Self::helper(inorder, &t.right);
         }
     }
 
     pub fn inorder_traversal(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
         let mut inorder = Vec::<i32>::new();
 
-        Solution::helper(&mut inorder, &root);
+        Self::helper(&mut inorder, &root);
 
         inorder
     }

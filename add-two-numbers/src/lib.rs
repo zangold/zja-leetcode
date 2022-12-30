@@ -6,17 +6,17 @@ struct Solution;
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
-    pub next: Option<Box<ListNode>>,
+    pub next: Option<Box<Self>>,
 }
 
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode { next: None, val }
+        Self { next: None, val }
     }
 
-    fn new_next(val: i32, next: Option<Box<ListNode>>) -> Self {
-        ListNode { next, val }
+    fn new_next(val: i32, next: Option<Box<Self>>) -> Self {
+        Self { next, val }
     }
 }
 
@@ -31,14 +31,14 @@ impl Solution {
                 let sum = n1.val + n2.val + carry;
                 Some(Box::new(ListNode {
                     val: sum % 10,
-                    next: Solution::add_helper(n1.next, n2.next, sum / 10),
+                    next: Self::add_helper(n1.next, n2.next, sum / 10),
                 }))
             }
             (Some(n), None) | (None, Some(n)) => {
                 let sum = n.val + carry;
                 Some(Box::new(ListNode {
                     val: sum % 10,
-                    next: Solution::add_helper(n.next, None, sum / 10),
+                    next: Self::add_helper(n.next, None, sum / 10),
                 }))
             }
             (None, None) if carry != 0 => Some(Box::new(ListNode::new(carry))),
@@ -50,7 +50,7 @@ impl Solution {
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
-        Solution::add_helper(l1, l2, 0)
+        Self::add_helper(l1, l2, 0)
     }
 }
 

@@ -14,8 +14,8 @@ fn char_index(c: char) -> usize {
 }
 
 impl AlphaTrie {
-    pub fn new() -> AlphaTrie {
-        AlphaTrie {
+    pub fn new() -> Self {
+        Self {
             ..Default::default()
         }
     }
@@ -61,7 +61,7 @@ impl AlphaTrie {
         self.children[char_index(c)].is_some()
     }
 
-    pub fn access_next(&mut self, c: char) -> &mut Option<Box<AlphaTrie>> {
+    pub fn access_next(&mut self, c: char) -> &mut Option<Box<Self>> {
         &mut self.children[char_index(c)]
     }
 

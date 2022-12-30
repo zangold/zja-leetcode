@@ -9,14 +9,14 @@ use std::rc::Rc;
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
     pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
+    pub left: Option<Rc<RefCell<Self>>>,
+    pub right: Option<Rc<RefCell<Self>>>,
 }
 
 impl TreeNode {
     #[inline]
     pub fn new(val: i32) -> Self {
-        TreeNode {
+        Self {
             val,
             left: None,
             right: None,
@@ -34,8 +34,8 @@ impl Solution {
             (None, Some(_)) | (Some(_), None) => false,
             (Some(leftnode), Some(rightnode)) => {
                 leftnode.borrow().val == rightnode.borrow().val
-                    && Solution::is_mirror(&leftnode.borrow().left, &rightnode.borrow().right)
-                    && Solution::is_mirror(&leftnode.borrow().right, &rightnode.borrow().left)
+                    && Self::is_mirror(&leftnode.borrow().left, &rightnode.borrow().right)
+                    && Self::is_mirror(&leftnode.borrow().right, &rightnode.borrow().left)
             }
         }
     }
@@ -43,7 +43,7 @@ impl Solution {
     pub fn is_symmetric(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
         match root {
             None => true,
-            Some(node) => Solution::is_mirror(&node.borrow().left, &node.borrow().right),
+            Some(node) => Self::is_mirror(&node.borrow().left, &node.borrow().right),
         }
     }
 }

@@ -12,7 +12,7 @@ impl Solution {
         }
 
         for next in graph[start].iter() {
-            Solution::helper(graph, *next as usize, path, paths);
+            Self::helper(graph, *next as usize, path, paths);
         }
 
         path.pop();
@@ -21,7 +21,7 @@ impl Solution {
     pub fn all_paths_source_target(graph: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let mut paths: Vec<Vec<i32>> = Default::default();
         let mut path = Vec::<i32>::new();
-        Solution::helper(&graph, 0, &mut path, &mut paths);
+        Self::helper(&graph, 0, &mut path, &mut paths);
         paths
     }
 }

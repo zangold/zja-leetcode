@@ -7,7 +7,7 @@ struct MedianFinder {
 
 impl MedianFinder {
     pub fn new() -> Self {
-        MedianFinder {
+        Self {
             ..Default::default()
         }
     }

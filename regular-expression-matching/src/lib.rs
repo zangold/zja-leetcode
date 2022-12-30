@@ -25,7 +25,7 @@ impl Solution {
                 (c, '*') => {
                     while !s.is_empty() && matches(s[0], c) {
                         // Try not matching this char, but continuing anyway.
-                        if Solution::is_match_helper(&s[0..], &p[2..]) {
+                        if Self::is_match_helper(&s[0..], &p[2..]) {
                             return true;
                         }
 
@@ -51,7 +51,7 @@ impl Solution {
     }
 
     pub fn is_match(s: String, p: String) -> bool {
-        Solution::is_match_helper(
+        Self::is_match_helper(
             &s.chars().collect::<Vec<char>>()[..],
             &p.chars().collect::<Vec<char>>()[..],
         )
