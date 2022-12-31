@@ -8,11 +8,11 @@ repos:
         entry: cargo fmt -- --check
         pass_filenames: false
 
-      - id: clippy
-        name: clippy
+      - id: cranky
+        name: cranky
         language: system
         types: [file, rust]
-        entry: cargo clippy --bins --tests --examples --all -- -D rust_2018_idioms -D warnings
+        entry: cargo cranky --bins --tests --examples --all -- -D warnings
         pass_filenames: false
 
       - id: test

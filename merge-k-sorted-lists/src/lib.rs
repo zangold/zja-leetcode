@@ -9,7 +9,7 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
-    fn new(val: i32) -> Self {
+    const fn new(val: i32) -> Self {
         Self { next: None, val }
     }
 }
@@ -33,11 +33,8 @@ impl Solution {
                 .iter()
                 .enumerate()
                 .min_by_key(|(_, list)| {
-                    if let Some(ref node) = list {
-                        node.val
-                    } else {
-                        panic!("shouldn't get here")
-                    }
+                    list.as_ref()
+                        .map_or_else(|| panic!("shouldn't get here"), |node| node.val)
                 })
                 .unwrap()
                 .0;

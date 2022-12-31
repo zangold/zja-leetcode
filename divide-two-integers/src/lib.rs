@@ -3,7 +3,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn divide(mut dividend: i32, mut divisor: i32) -> i32 {
+    pub const fn divide(mut dividend: i32, mut divisor: i32) -> i32 {
         let mut quotient: i32 = 0;
 
         // use this to deal with edge cases where dividend == i32::MIN, since

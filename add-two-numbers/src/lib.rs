@@ -11,11 +11,11 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
-    fn new(val: i32) -> Self {
+    const fn new(val: i32) -> Self {
         Self { next: None, val }
     }
 
-    fn new_next(val: i32, next: Option<Box<Self>>) -> Self {
+    const fn new_next(val: i32, next: Option<Box<Self>>) -> Self {
         Self { next, val }
     }
 }

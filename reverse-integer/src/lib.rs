@@ -3,7 +3,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn reverse(x: i32) -> i32 {
+    pub const fn reverse(x: i32) -> i32 {
         let mut reversed: u32 = 0;
 
         let sign: i32 = if x < 0 { -1 } else { 1 };

@@ -1,0 +1,9 @@
+warn = [
+    "clippy::all",
+    "clippy::complexity",
+    "clippy::correctness",
+    "clippy::nursery",
+    "clippy::perf",
+    "clippy::style",
+    "clippy::suspicious",
+]

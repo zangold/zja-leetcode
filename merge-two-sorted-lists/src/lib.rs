@@ -9,7 +9,7 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
-    fn new(val: i32) -> Self {
+    const fn new(val: i32) -> Self {
         Self { next: None, val }
     }
 }
@@ -24,28 +24,15 @@ impl Solution {
         let mut output: Option<Box<ListNode>> = None;
         let mut cursor: &mut Option<Box<ListNode>> = &mut output;
 
-        while list1.is_some() && list2.is_some() {
-            let v1 = if let Some(ref node) = list1 {
-                node.val
-            } else {
-                panic!("?")
-            };
-            let v2 = if let Some(ref node) = list2 {
-                node.val
-            } else {
-                panic!("?")
-            };
-
-            if v1 < v2 {
+        while let (Some(ref node1), Some(ref node2)) = (&list1, &list2) {
+            let val = i32::min(node1.val, node2.val);
+            if node1.val < node2.val {
                 list1 = list1.unwrap().next;
             } else {
                 list2 = list2.unwrap().next;
             }
 
-            *cursor = Some(Box::new(ListNode {
-                val: i32::min(v1, v2),
-                next: None,
-            }));
+            *cursor = Some(Box::new(ListNode { val, next: None }));
             if let Some(node) = cursor {
                 cursor = &mut node.next;
             }

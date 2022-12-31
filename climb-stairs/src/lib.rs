@@ -36,7 +36,7 @@ impl Solution {
 
     const SOLUTIONS: [i32; Self::ARRAY_LEN] = Self::init_solution_table();
 
-    pub fn climb_stairs(n: i32) -> i32 {
+    pub const fn climb_stairs(n: i32) -> i32 {
         Self::SOLUTIONS[n as usize]
     }
 }

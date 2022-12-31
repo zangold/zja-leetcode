@@ -3,7 +3,7 @@
 struct Solution;
 
 impl Solution {
-    fn expand(sc: &[char], mut start: usize, mut end: usize) -> std::ops::Range<usize> {
+    const fn expand(sc: &[char], mut start: usize, mut end: usize) -> std::ops::Range<usize> {
         while start > 0 && end < sc.len() - 1 {
             if sc[start - 1] == sc[end + 1] {
                 start -= 1;
