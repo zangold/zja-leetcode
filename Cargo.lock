@@ -241,6 +241,10 @@ name = "two-sum"
 version = "0.1.0"
 
 [[package]]
+name = "unique-paths-iii"
+version = "0.1.0"
+
+[[package]]
 name = "valid-palindrome"
 version = "0.1.0"
 
