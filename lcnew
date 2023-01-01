@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# script to make a new crate in this workspace for a leetcode problem. Does the following:
+# - Adds a new entry in the workspace definition in Cargo.toml
+# - Creates a new library crate
+# - Disables doctest for that library crate
+# - Fills in src/lib.rs with some reasonable defaults.
+
+if [[ ! -e .git ]]; then
+    echo "Script must be run at git root. Exiting"
+    exit 1
+fi
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: ./lcnew <new solution name>"
+    exit 1
+fi
+
+NEW_CRATE=$1
+
+TMPFILE=$(mktemp)
+grep "^    " Cargo.toml > $TMPFILE
+echo "    \"$NEW_CRATE\"," >> $TMPFILE
+
+echo "[workspace]" > Cargo.toml
+echo "members = [" >> Cargo.toml
+sort $TMPFILE | uniq >> Cargo.toml
+echo "]" >> Cargo.toml
+
+rm $TMPFILE
+
+cargo new --lib $NEW_CRATE
+
+if [[ $? -ne 0 ]]; then
+    echo "'cargo new --lib $NEW_CRATE' failed. Exiting."
+    exit 1
+fi
+
+echo "" >> $NEW_CRATE/Cargo.toml
+echo "[lib]" >> $NEW_CRATE/Cargo.toml
+echo "doctest = false" >> $NEW_CRATE/Cargo.toml
+
+cat > $NEW_CRATE/src/lib.rs << EOF
+#![allow(dead_code)]
+
+struct Solution;
+
+impl Solution {
+}
+
+#[test]
+fn do_test() {
+}
+EOF
