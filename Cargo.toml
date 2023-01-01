@@ -32,6 +32,7 @@ members = [
     "powx-n",
     "regular-expression-matching",
     "remove-duplicates-from-sorted-array",
+    "remove-nth-node-from-end-of-list",
     "remove-stones-to-minimize-the-total",
     "reverse-integer",
     "reverse-string",
