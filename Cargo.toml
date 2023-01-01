@@ -48,5 +48,6 @@ members = [
     "valid-palindrome",
     "valid-parentheses",
     "wildcard-matching",
+    "word-pattern",
     "word-search-ii",
 ]

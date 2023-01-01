@@ -263,5 +263,9 @@ name = "wildcard-matching"
 version = "0.1.0"
 
 [[package]]
+name = "word-pattern"
+version = "0.1.0"
+
+[[package]]
 name = "word-search-ii"
 version = "0.1.0"
