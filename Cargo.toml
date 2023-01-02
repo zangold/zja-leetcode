@@ -6,6 +6,7 @@ members = [
     "climb-stairs",
     "container-with-most-water",
     "count-of-smaller-numbers-after-self",
+    "detect-capital",
     "divide-two-integers",
     "domino-and-tromino-tiling",
     "find-median-from-data-stream",

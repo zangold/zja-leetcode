@@ -33,6 +33,10 @@ name = "count-of-smaller-numbers-after-self"
 version = "0.1.0"
 
 [[package]]
+name = "detect-capital"
+version = "0.1.0"
+
+[[package]]
 name = "divide-two-integers"
 version = "0.1.0"
 
