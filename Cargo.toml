@@ -24,6 +24,7 @@ members = [
     "max-points-on-a-line",
     "max-sliding-window",
     "maximum-bags-with-full-capacity-of-rocks",
+    "maximum-depth-of-binary-tree",
     "median-of-two-sorted-arrays",
     "merge-k-sorted-lists",
     "merge-sorted-array",
