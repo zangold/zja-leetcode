@@ -153,6 +153,10 @@ name = "minimum-window-substring"
 version = "0.1.0"
 
 [[package]]
+name = "number-of-1-bits"
+version = "0.1.0"
+
+[[package]]
 name = "palindrome-number"
 version = "0.1.0"
 
