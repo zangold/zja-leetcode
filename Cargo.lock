@@ -141,6 +141,10 @@ name = "merge-two-sorted-lists"
 version = "0.1.0"
 
 [[package]]
+name = "minimum-rounds-to-complete-all-tasks"
+version = "0.1.0"
+
+[[package]]
 name = "minimum-window-substring"
 version = "0.1.0"
 
