@@ -29,6 +29,7 @@ members = [
     "merge-k-sorted-lists",
     "merge-sorted-array",
     "merge-two-sorted-lists",
+    "minimum-number-of-arrows-to-burst-balloons",
     "minimum-rounds-to-complete-all-tasks",
     "minimum-window-substring",
     "number-of-1-bits",
