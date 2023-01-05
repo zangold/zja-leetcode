@@ -55,6 +55,7 @@ members = [
     "unique-paths-iii",
     "valid-palindrome",
     "valid-parentheses",
+    "valid-sudoku",
     "wildcard-matching",
     "word-pattern",
     "word-search-ii",
