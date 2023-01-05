@@ -169,6 +169,10 @@ name = "palindrome-number"
 version = "0.1.0"
 
 [[package]]
+name = "permutations"
+version = "0.1.0"
+
+[[package]]
 name = "plus-one"
 version = "0.1.0"
 
