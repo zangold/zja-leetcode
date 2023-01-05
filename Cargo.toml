@@ -40,6 +40,7 @@ members = [
     "remove-nth-node-from-end-of-list",
     "remove-stones-to-minimize-the-total",
     "reverse-integer",
+    "reverse-nodes-in-k-group",
     "reverse-string",
     "roman-to-integer",
     "search-insert-position",
