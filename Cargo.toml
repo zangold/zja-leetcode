@@ -13,6 +13,7 @@ members = [
     "find-median-from-data-stream",
     "find-the-index-of-the-first-occurrence-in-a-string",
     "first-missing-positive",
+    "generate-parentheses",
     "integer-to-roman",
     "jump-game",
     "letter-combinations-of-a-phone-number",
