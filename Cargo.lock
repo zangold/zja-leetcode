@@ -49,6 +49,10 @@ name = "domino-and-tromino-tiling"
 version = "0.1.0"
 
 [[package]]
+name = "find-first-and-last-position-of-element-in-sorted-array"
+version = "0.1.0"
+
+[[package]]
 name = "find-median-from-data-stream"
 version = "0.1.0"
 
