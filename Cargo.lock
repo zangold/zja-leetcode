@@ -189,6 +189,10 @@ name = "plus-one"
 version = "0.1.0"
 
 [[package]]
+name = "power-of-three"
+version = "0.1.0"
+
+[[package]]
 name = "powx-n"
 version = "0.1.0"
 
