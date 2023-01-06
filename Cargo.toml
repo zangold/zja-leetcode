@@ -52,6 +52,7 @@ members = [
     "roman-to-integer",
     "search-insert-position",
     "set-matrix-zeroes",
+    "single-number",
     "single-threaded-cpu",
     "sqrtx",
     "string-to-integer-atoi",
