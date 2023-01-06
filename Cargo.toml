@@ -26,6 +26,7 @@ members = [
     "max-sliding-window",
     "maximum-bags-with-full-capacity-of-rocks",
     "maximum-depth-of-binary-tree",
+    "maximum-ice-cream-bars",
     "median-of-two-sorted-arrays",
     "merge-k-sorted-lists",
     "merge-sorted-array",

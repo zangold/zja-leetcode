@@ -130,6 +130,10 @@ name = "maximum-depth-of-binary-tree"
 version = "0.1.0"
 
 [[package]]
+name = "maximum-ice-cream-bars"
+version = "0.1.0"
+
+[[package]]
 name = "median-of-two-sorted-arrays"
 version = "0.1.0"
 dependencies = [
