@@ -37,6 +37,7 @@ members = [
     "minimum-window-substring",
     "number-of-1-bits",
     "palindrome-number",
+    "pascals-triangle",
     "permutations",
     "plus-one",
     "powx-n",
