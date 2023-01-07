@@ -36,9 +36,20 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
-echo "" >> $NEW_CRATE/Cargo.toml
-echo "[lib]" >> $NEW_CRATE/Cargo.toml
-echo "doctest = false" >> $NEW_CRATE/Cargo.toml
+cat > $NEW_CRATE/Cargo.toml << EOF
+[package]
+name = "$NEW_CRATE"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+shared = { path = "../shared" }
+
+[lib]
+doctest = false
+EOF
 
 cat > $NEW_CRATE/src/lib.rs << EOF
 #![allow(dead_code)]

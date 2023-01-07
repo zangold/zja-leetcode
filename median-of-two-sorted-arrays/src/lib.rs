@@ -2,9 +2,6 @@
 
 struct Solution;
 
-// for testing
-use rand::Rng;
-
 impl Solution {
     // Solver for base case which just merges the two arrays and selects the middle element. Only
     // call this with at most two elements in 'short', to keep runtime low.
@@ -113,6 +110,8 @@ fn naive_solution(nums1: &[i32], nums2: &[i32]) -> f64 {
 
 #[test]
 fn do_test() {
+    use rand::Rng;
+
     assert_eq!(
         2.0_f64,
         Solution::find_median_sorted_arrays(vec![1, 3], vec![2])

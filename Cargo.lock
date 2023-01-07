@@ -265,6 +265,13 @@ name = "reverse-integer"
 version = "0.1.0"
 
 [[package]]
+name = "reverse-linked-list"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "reverse-nodes-in-k-group"
 version = "0.1.0"
 
@@ -282,6 +289,10 @@ version = "0.1.0"
 
 [[package]]
 name = "set-matrix-zeroes"
+version = "0.1.0"
+
+[[package]]
+name = "shared"
 version = "0.1.0"
 
 [[package]]
