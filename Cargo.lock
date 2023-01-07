@@ -342,6 +342,13 @@ name = "unique-paths-iii"
 version = "0.1.0"
 
 [[package]]
+name = "valid-anagram"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "valid-palindrome"
 version = "0.1.0"
 

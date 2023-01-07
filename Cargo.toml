@@ -67,6 +67,7 @@ members = [
     "three-sum",
     "two-sum",
     "unique-paths-iii",
+    "valid-anagram",
     "valid-palindrome",
     "valid-parentheses",
     "valid-sudoku",
