@@ -29,6 +29,13 @@ name = "container-with-most-water"
 version = "0.1.0"
 
 [[package]]
+name = "convert-sorted-array-to-binary-search-tree"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "count-of-smaller-numbers-after-self"
 version = "0.1.0"
 

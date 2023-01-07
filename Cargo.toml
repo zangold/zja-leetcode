@@ -5,6 +5,7 @@ members = [
     "binary-tree-inorder-traversal",
     "climb-stairs",
     "container-with-most-water",
+    "convert-sorted-array-to-binary-search-tree",
     "count-of-smaller-numbers-after-self",
     "delete-columns-to-make-sorted",
     "detect-capital",
