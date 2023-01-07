@@ -39,6 +39,7 @@ members = [
     "minimum-number-of-arrows-to-burst-balloons",
     "minimum-rounds-to-complete-all-tasks",
     "minimum-window-substring",
+    "missing-number",
     "number-of-1-bits",
     "palindrome-number",
     "pascals-triangle",
