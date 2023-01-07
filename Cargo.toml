@@ -48,6 +48,7 @@ members = [
     "remove-duplicates-from-sorted-array",
     "remove-nth-node-from-end-of-list",
     "remove-stones-to-minimize-the-total",
+    "reverse-bits",
     "reverse-integer",
     "reverse-nodes-in-k-group",
     "reverse-string",

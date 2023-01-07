@@ -257,6 +257,10 @@ name = "remove-stones-to-minimize-the-total"
 version = "0.1.0"
 
 [[package]]
+name = "reverse-bits"
+version = "0.1.0"
+
+[[package]]
 name = "reverse-integer"
 version = "0.1.0"
 
