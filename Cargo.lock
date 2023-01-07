@@ -80,6 +80,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "happy-number"
+version = "0.1.0"
+
+[[package]]
 name = "integer-to-roman"
 version = "0.1.0"
 

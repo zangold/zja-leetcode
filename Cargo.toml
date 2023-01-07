@@ -15,6 +15,7 @@ members = [
     "find-the-index-of-the-first-occurrence-in-a-string",
     "first-missing-positive",
     "generate-parentheses",
+    "happy-number",
     "integer-to-roman",
     "jump-game",
     "letter-combinations-of-a-phone-number",
