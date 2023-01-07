@@ -72,6 +72,13 @@ name = "first-missing-positive"
 version = "0.1.0"
 
 [[package]]
+name = "fizz-buzz"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "gas-station"
 version = "0.1.0"
 
