@@ -18,6 +18,7 @@ members = [
     "fizz-buzz",
     "gas-station",
     "generate-parentheses",
+    "group-anagrams",
     "happy-number",
     "integer-to-roman",
     "jump-game",
