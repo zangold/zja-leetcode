@@ -25,14 +25,9 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn do_tests() {
-        assert_eq!(Solution::my_pow(2.0_f64, -2147483648), 0.0_f64);
-        assert_eq!(Solution::my_pow(2.0_f64, 10), 1024.0_f64);
-        assert_eq!(Solution::my_pow(2.0_f64, -2), 0.25_f64);
-    }
+#[test]
+fn do_test() {
+    assert_eq!(Solution::my_pow(2.0_f64, -2147483648), 0.0_f64);
+    assert_eq!(Solution::my_pow(2.0_f64, 10), 1024.0_f64);
+    assert_eq!(Solution::my_pow(2.0_f64, -2), 0.25_f64);
 }

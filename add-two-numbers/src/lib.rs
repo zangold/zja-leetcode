@@ -65,30 +65,31 @@ fn list_from_slice(digits: &[i32]) -> Option<Box<ListNode>> {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+#[test]
+fn do_test() {
+    let a = list_from_slice(&[2, 4, 3]);
+    let b = list_from_slice(&[5, 6, 4]);
 
-    #[test]
-    fn do_tests() {
-        let a = list_from_slice(&[2, 4, 3]);
-        let b = list_from_slice(&[5, 6, 4]);
+    assert_eq!(Solution::add_two_numbers(a, b), list_from_slice(&[7, 0, 8]));
 
-        println!("{:?}", Solution::add_two_numbers(a, b));
+    let a = Some(Box::new(ListNode::new(0)));
+    let b = Some(Box::new(ListNode::new(0)));
 
-        let a = Some(Box::new(ListNode::new(0)));
-        let b = Some(Box::new(ListNode::new(0)));
+    assert_eq!(Solution::add_two_numbers(a, b), list_from_slice(&[0]));
 
-        println!("{:?}", Solution::add_two_numbers(a, b));
+    let a = list_from_slice(&[9, 9, 9, 9, 9, 9, 9]);
+    let b = list_from_slice(&[9, 9, 9, 9]);
 
-        let a = list_from_slice(&[9, 9, 9, 9, 9, 9, 9]);
-        let b = list_from_slice(&[9, 9, 9, 9]);
+    assert_eq!(
+        Solution::add_two_numbers(a, b),
+        list_from_slice(&[8, 9, 9, 9, 0, 0, 0, 1])
+    );
 
-        println!("{:?}", Solution::add_two_numbers(a, b));
+    let a = list_from_slice(&[2, 4, 9]);
+    let b = list_from_slice(&[5, 6, 4, 9]);
 
-        let a = list_from_slice(&[2, 4, 9]);
-        let b = list_from_slice(&[5, 6, 4, 9]);
-
-        println!("{:?}", Solution::add_two_numbers(a, b));
-    }
+    assert_eq!(
+        Solution::add_two_numbers(a, b),
+        list_from_slice(&[7, 0, 4, 0, 1])
+    );
 }

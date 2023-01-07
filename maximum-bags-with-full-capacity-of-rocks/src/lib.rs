@@ -25,7 +25,7 @@ impl Solution {
 }
 
 #[test]
-fn test1() {
+fn do_test() {
     let capacity = vec![2, 3, 4, 5];
     let rocks = vec![1, 2, 4, 4];
     let additional_rocks = 2;
@@ -35,10 +35,7 @@ fn test1() {
         Solution::maximum_bags(capacity, rocks, additional_rocks),
         expected
     );
-}
 
-#[test]
-fn test2() {
     let capacity = vec![10, 2, 2];
     let rocks = vec![2, 2, 0];
     let additional_rocks = 100;

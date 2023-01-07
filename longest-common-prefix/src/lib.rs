@@ -30,20 +30,15 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+fn test_helper(strs: Vec<&str>, expected: &str) {
+    assert_eq!(
+        Solution::longest_common_prefix(strs.into_iter().map(|x| x.to_string()).collect()),
+        expected.to_string()
+    )
+}
 
-    fn test_helper(strs: Vec<&str>, expected: &str) {
-        assert_eq!(
-            Solution::longest_common_prefix(strs.into_iter().map(|x| x.to_string()).collect()),
-            expected.to_string()
-        )
-    }
-
-    #[test]
-    fn main() {
-        test_helper(vec!["flower", "flow", "flight"], "fl");
-        test_helper(vec!["dog", "racecar", "car"], "");
-    }
+#[test]
+fn do_test() {
+    test_helper(vec!["flower", "flow", "flight"], "fl");
+    test_helper(vec!["dog", "racecar", "car"], "");
 }

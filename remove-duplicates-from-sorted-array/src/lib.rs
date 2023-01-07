@@ -29,7 +29,7 @@ fn naive_solution(nums: &[i32]) -> Vec<i32> {
     output
 }
 
-fn do_test(nums: &[i32]) {
+fn test_helper(nums: &[i32]) {
     let naive = naive_solution(nums);
 
     let mut v: Vec<i32> = nums.to_vec();
@@ -42,7 +42,7 @@ fn do_test(nums: &[i32]) {
 }
 
 #[test]
-fn main() {
-    do_test(&[1, 1, 2]);
-    do_test(&[0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
+fn do_test() {
+    test_helper(&[1, 1, 2]);
+    test_helper(&[0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
 }

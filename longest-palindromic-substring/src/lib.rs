@@ -41,19 +41,14 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn do_test() {
-        assert_eq!(
-            Solution::longest_palindrome("babad".into()),
-            "bab".to_string()
-        );
-        assert_eq!(
-            Solution::longest_palindrome("cbbd".into()),
-            "bb".to_string()
-        );
-    }
+#[test]
+fn do_test() {
+    assert_eq!(
+        Solution::longest_palindrome("babad".into()),
+        "bab".to_string()
+    );
+    assert_eq!(
+        Solution::longest_palindrome("cbbd".into()),
+        "bb".to_string()
+    );
 }

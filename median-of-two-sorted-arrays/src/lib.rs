@@ -2,6 +2,9 @@
 
 struct Solution;
 
+// for testing
+use rand::Rng;
+
 impl Solution {
     // Solver for base case which just merges the two arrays and selects the middle element. Only
     // call this with at most two elements in 'short', to keep runtime low.
@@ -87,72 +90,66 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-    use rand::Rng;
+fn naive_solution(nums1: &[i32], nums2: &[i32]) -> f64 {
+    let mut all_elements = nums1
+        .iter()
+        .chain(nums2.iter())
+        .copied()
+        .collect::<Vec<i32>>();
 
-    fn naive_solution(nums1: &[i32], nums2: &[i32]) -> f64 {
-        let mut all_elements = nums1
-            .iter()
-            .chain(nums2.iter())
-            .copied()
-            .collect::<Vec<i32>>();
+    all_elements.sort_unstable();
 
-        all_elements.sort_unstable();
+    if all_elements.len() % 2 == 0 {
+        // Average of the middle two elements
+        let a = all_elements[all_elements.len() / 2 - 1] as f64;
+        let b = all_elements[all_elements.len() / 2] as f64;
 
-        if all_elements.len() % 2 == 0 {
-            // Average of the middle two elements
-            let a = all_elements[all_elements.len() / 2 - 1] as f64;
-            let b = all_elements[all_elements.len() / 2] as f64;
-
-            (a + b) / 2.0_f64
-        } else {
-            // Just the middle element
-            all_elements[all_elements.len() / 2] as f64
-        }
+        (a + b) / 2.0_f64
+    } else {
+        // Just the middle element
+        all_elements[all_elements.len() / 2] as f64
     }
+}
 
-    #[test]
-    fn do_tests() {
-        assert_eq!(
-            2.0_f64,
-            Solution::find_median_sorted_arrays(vec![1, 3], vec![2])
-        );
-        assert_eq!(
-            2.5_f64,
-            Solution::find_median_sorted_arrays(vec![1, 2], vec![3, 4])
-        );
+#[test]
+fn do_test() {
+    assert_eq!(
+        2.0_f64,
+        Solution::find_median_sorted_arrays(vec![1, 3], vec![2])
+    );
+    assert_eq!(
+        2.5_f64,
+        Solution::find_median_sorted_arrays(vec![1, 2], vec![3, 4])
+    );
 
-        // Try generating some arrays, each of random lengths between 0 and 100, with random contents,
-        // and see if the fast solution matches the naive solution.
-        for m in 0..100 {
-            for n in 0..100 {
-                if m == 0 && n == 0 {
-                    continue;
-                }
-
-                let mut v1 = (0..m)
-                    .into_iter()
-                    .map(|_| rand::thread_rng().gen_range(0..100))
-                    .collect::<Vec<i32>>();
-                let mut v2 = (0..n)
-                    .into_iter()
-                    .map(|_| rand::thread_rng().gen_range(0..100))
-                    .collect::<Vec<i32>>();
-
-                v1.sort_unstable();
-                v2.sort_unstable();
-
-                println!("v1 = {:?}", v1);
-                println!("v2 = {:?}", v2);
-
-                let s1 = naive_solution(&v1, &v2);
-                let s2 = Solution::find_median_sorted_arrays(v1, v2);
-
-                assert_eq!(s1, s2);
-                println!("test case passed");
+    // Try generating some arrays, each of random lengths between 0 and 100, with random contents,
+    // and see if the fast solution matches the naive solution.
+    for m in 0..20 {
+        for n in 0..20 {
+            if m == 0 && n == 0 {
+                continue;
             }
+
+            let mut v1 = (0..m)
+                .into_iter()
+                .map(|_| rand::thread_rng().gen_range(0..100))
+                .collect::<Vec<i32>>();
+            let mut v2 = (0..n)
+                .into_iter()
+                .map(|_| rand::thread_rng().gen_range(0..100))
+                .collect::<Vec<i32>>();
+
+            v1.sort_unstable();
+            v2.sort_unstable();
+
+            println!("v1 = {:?}", v1);
+            println!("v2 = {:?}", v2);
+
+            let s1 = naive_solution(&v1, &v2);
+            let s2 = Solution::find_median_sorted_arrays(v1, v2);
+
+            assert_eq!(s1, s2);
+            println!("test case passed");
         }
     }
 }

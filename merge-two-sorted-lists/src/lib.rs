@@ -63,7 +63,7 @@ fn make_list(mut values: &[i32]) -> Option<Box<ListNode>> {
 }
 
 #[test]
-fn do_tests() {
+fn do_test() {
     let a = make_list(&[1, 2, 4]);
     let b = make_list(&[1, 3, 4]);
     let c = make_list(&[1, 1, 2, 3, 4, 4]);

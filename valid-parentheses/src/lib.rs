@@ -30,18 +30,13 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn main() {
-        assert!(Solution::is_valid("".to_string()));
-        assert!(Solution::is_valid("()[]{}".to_string()));
-        assert!(!Solution::is_valid("(]".to_string()));
-        assert!(!Solution::is_valid("]".to_string()));
-        assert!(!Solution::is_valid("[".to_string()));
-        assert!(Solution::is_valid("({[]})".to_string()));
-        assert!(!Solution::is_valid("({[][})".to_string()));
-    }
+#[test]
+fn do_test() {
+    assert!(Solution::is_valid("".to_string()));
+    assert!(Solution::is_valid("()[]{}".to_string()));
+    assert!(!Solution::is_valid("(]".to_string()));
+    assert!(!Solution::is_valid("]".to_string()));
+    assert!(!Solution::is_valid("[".to_string()));
+    assert!(Solution::is_valid("({[]})".to_string()));
+    assert!(!Solution::is_valid("({[][})".to_string()));
 }

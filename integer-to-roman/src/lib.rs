@@ -31,75 +31,70 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+fn roman_to_int(s: String) -> i32 {
+    let v = s.chars().collect::<Vec<char>>();
+    let mut b = &v[..];
+    let mut value: i32 = 0;
 
-    fn roman_to_int(s: String) -> i32 {
-        let v = s.chars().collect::<Vec<char>>();
-        let mut b = &v[..];
-        let mut value: i32 = 0;
+    while !b.is_empty() {
+        let n = b[0];
 
-        while !b.is_empty() {
-            let n = b[0];
+        let m = if b.len() == 1 { '?' } else { b[1] };
 
-            let m = if b.len() == 1 { '?' } else { b[1] };
+        value += match (n, m) {
+            ('I', 'V') => {
+                b = &b[1..];
+                4
+            }
+            ('I', 'X') => {
+                b = &b[1..];
+                9
+            }
+            ('X', 'L') => {
+                b = &b[1..];
+                40
+            }
+            ('X', 'C') => {
+                b = &b[1..];
+                90
+            }
+            ('C', 'D') => {
+                b = &b[1..];
+                400
+            }
+            ('C', 'M') => {
+                b = &b[1..];
+                900
+            }
+            ('I', _) => 1,
+            ('V', _) => 5,
+            ('X', _) => 10,
+            ('L', _) => 50,
+            ('C', _) => 100,
+            ('D', _) => 500,
+            ('M', _) => 1000,
+            (_, _) => panic!("invalid roman numeral"),
+        };
 
-            value += match (n, m) {
-                ('I', 'V') => {
-                    b = &b[1..];
-                    4
-                }
-                ('I', 'X') => {
-                    b = &b[1..];
-                    9
-                }
-                ('X', 'L') => {
-                    b = &b[1..];
-                    40
-                }
-                ('X', 'C') => {
-                    b = &b[1..];
-                    90
-                }
-                ('C', 'D') => {
-                    b = &b[1..];
-                    400
-                }
-                ('C', 'M') => {
-                    b = &b[1..];
-                    900
-                }
-                ('I', _) => 1,
-                ('V', _) => 5,
-                ('X', _) => 10,
-                ('L', _) => 50,
-                ('C', _) => 100,
-                ('D', _) => 500,
-                ('M', _) => 1000,
-                (_, _) => panic!("invalid roman numeral"),
-            };
-
-            b = &b[1..];
-        }
-
-        value
+        b = &b[1..];
     }
 
-    fn test_case(num: i32, expected: &str) {
-        assert_eq!(Solution::int_to_roman(num), expected.to_string())
-    }
+    value
+}
 
-    #[test]
-    fn do_tests() {
-        test_case(3, "III");
-        test_case(58, "LVIII");
-        test_case(1994, "MCMXCIV");
+fn test_case(num: i32, expected: &str) {
+    assert_eq!(Solution::int_to_roman(num), expected.to_string())
+}
 
-        test_case(899, "DCCCXCIX");
+#[test]
+fn do_test() {
+    test_case(3, "III");
+    test_case(58, "LVIII");
+    test_case(1994, "MCMXCIV");
 
-        for i in 1..4000 {
-            assert_eq!(roman_to_int(Solution::int_to_roman(i)), i);
-        }
+    test_case(899, "DCCCXCIX");
+
+    for i in 1..4000 {
+        assert_eq!(roman_to_int(Solution::int_to_roman(i)), i);
     }
 }

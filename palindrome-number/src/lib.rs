@@ -20,14 +20,9 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn main() {
-        assert!(Solution::is_palindrome(121));
-        assert!(!Solution::is_palindrome(-121));
-        assert!(!Solution::is_palindrome(10));
-    }
+#[test]
+fn do_test() {
+    assert!(Solution::is_palindrome(121));
+    assert!(!Solution::is_palindrome(-121));
+    assert!(!Solution::is_palindrome(10));
 }

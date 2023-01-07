@@ -29,7 +29,7 @@ impl Solution {
 }
 
 #[test]
-fn main() {
+fn do_test() {
     for i in 0i32..1000i32 {
         let sqrt = Solution::my_sqrt(i);
 

@@ -58,20 +58,15 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+#[test]
+fn do_test() {
+    assert!(!Solution::is_match("aa".into(), "a".into()));
+    assert!(Solution::is_match("aa".into(), "a*".into()));
+    assert!(Solution::is_match("ab".into(), ".*".into()));
 
-    #[test]
-    fn main() {
-        assert!(!Solution::is_match("aa".into(), "a".into()));
-        assert!(Solution::is_match("aa".into(), "a*".into()));
-        assert!(Solution::is_match("ab".into(), ".*".into()));
+    // loop, looop, loooop, etc.
+    assert!(Solution::is_match("looooop".into(), "loo*op".into()));
 
-        // loop, looop, loooop, etc.
-        assert!(Solution::is_match("looooop".into(), "loo*op".into()));
-
-        assert!(Solution::is_match("aab".into(), "c*a*b".into()));
-        assert!(Solution::is_match("a".into(), "ab*".into()));
-    }
+    assert!(Solution::is_match("aab".into(), "c*a*b".into()));
+    assert!(Solution::is_match("a".into(), "ab*".into()));
 }

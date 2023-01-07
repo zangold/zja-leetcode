@@ -55,14 +55,9 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn do_test() {
-        assert_eq!(Solution::roman_to_int("III".into()), 3);
-        assert_eq!(Solution::roman_to_int("LVIII".into()), 58);
-        assert_eq!(Solution::roman_to_int("MCMXCIV".into()), 1994);
-    }
+#[test]
+fn do_test() {
+    assert_eq!(Solution::roman_to_int("III".into()), 3);
+    assert_eq!(Solution::roman_to_int("LVIII".into()), 58);
+    assert_eq!(Solution::roman_to_int("MCMXCIV".into()), 1994);
 }

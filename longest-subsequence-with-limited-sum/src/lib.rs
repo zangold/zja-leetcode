@@ -30,7 +30,7 @@ impl Solution {
 }
 
 #[test]
-fn it_works() {
+fn do_test() {
     assert_eq!(
         Solution::answer_queries(vec![4, 5, 2, 1], vec![3, 10, 21]),
         vec![2, 3, 4]

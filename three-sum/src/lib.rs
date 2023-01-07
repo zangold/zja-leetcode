@@ -45,7 +45,7 @@ impl Solution {
 }
 
 #[test]
-fn main() {
+fn do_test() {
     assert_eq!(
         Solution::three_sum(vec![-1, 0, 1, 2, -1, 4]),
         vec![vec![-1, -1, 2], vec![-1, 0, 1]]

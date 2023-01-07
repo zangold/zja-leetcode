@@ -45,54 +45,49 @@ impl Solution {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+#[test]
+fn do_test() {
+    assert_eq!(Solution::my_atoi("42".into()), 42);
+    assert_eq!(Solution::my_atoi("-42".into()), -42);
+    assert_eq!(Solution::my_atoi("4193 with words".into()), 4193);
+    assert_eq!(Solution::my_atoi("  +4193 with words".into()), 4193);
+    assert_eq!(Solution::my_atoi("  -4193 with words".into()), -4193);
 
-    #[test]
-    fn do_tests() {
-        assert_eq!(Solution::my_atoi("42".into()), 42);
-        assert_eq!(Solution::my_atoi("-42".into()), -42);
-        assert_eq!(Solution::my_atoi("4193 with words".into()), 4193);
-        assert_eq!(Solution::my_atoi("  +4193 with words".into()), 4193);
-        assert_eq!(Solution::my_atoi("  -4193 with words".into()), -4193);
+    assert_eq!(
+        Solution::my_atoi("  +10000000000 with words".into()),
+        i32::MAX
+    );
+    assert_eq!(
+        Solution::my_atoi("  -10000000000 with words".into()),
+        i32::MIN
+    );
 
-        assert_eq!(
-            Solution::my_atoi("  +10000000000 with words".into()),
-            i32::MAX
-        );
-        assert_eq!(
-            Solution::my_atoi("  -10000000000 with words".into()),
-            i32::MIN
-        );
+    assert_eq!(
+        Solution::my_atoi("  -2147483648 with words".into()),
+        i32::MIN
+    );
+    assert_eq!(
+        Solution::my_atoi("  +2147483647 with words".into()),
+        i32::MAX
+    );
 
-        assert_eq!(
-            Solution::my_atoi("  -2147483648 with words".into()),
-            i32::MIN
-        );
-        assert_eq!(
-            Solution::my_atoi("  +2147483647 with words".into()),
-            i32::MAX
-        );
+    assert_eq!(
+        Solution::my_atoi("  -2147483649 with words".into()),
+        i32::MIN
+    );
+    assert_eq!(
+        Solution::my_atoi("  +2147483648 with words".into()),
+        i32::MAX
+    );
 
-        assert_eq!(
-            Solution::my_atoi("  -2147483649 with words".into()),
-            i32::MIN
-        );
-        assert_eq!(
-            Solution::my_atoi("  +2147483648 with words".into()),
-            i32::MAX
-        );
+    assert_eq!(
+        Solution::my_atoi("  -2147483647 with words".into()),
+        -2147483647
+    );
+    assert_eq!(
+        Solution::my_atoi("  +2147483646 with words".into()),
+        2147483646
+    );
 
-        assert_eq!(
-            Solution::my_atoi("  -2147483647 with words".into()),
-            -2147483647
-        );
-        assert_eq!(
-            Solution::my_atoi("  +2147483646 with words".into()),
-            2147483646
-        );
-
-        assert_eq!(Solution::my_atoi("words and 987".into()), 0);
-    }
+    assert_eq!(Solution::my_atoi("words and 987".into()), 0);
 }

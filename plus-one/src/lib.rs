@@ -26,7 +26,7 @@ impl Solution {
 }
 
 #[test]
-fn do_tests() {
+fn do_test() {
     assert_eq!(Solution::plus_one(vec![1, 2, 3]), vec![1, 2, 4]);
     assert_eq!(Solution::plus_one(vec![4, 3, 2, 1]), vec![4, 3, 2, 2]);
     assert_eq!(Solution::plus_one(vec![9]), vec![1, 0]);

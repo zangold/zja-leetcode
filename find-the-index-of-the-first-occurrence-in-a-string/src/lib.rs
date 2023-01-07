@@ -26,7 +26,7 @@ impl Solution {
 }
 
 #[test]
-fn it_works() {
+fn do_test() {
     assert_eq!(Solution::str_str("sadbutsad".into(), "sad".into()), 0);
     assert_eq!(Solution::str_str("sadbutsad".into(), "but".into()), 3);
     assert_eq!(Solution::str_str("leetcode".into(), "leeto".into()), -1);

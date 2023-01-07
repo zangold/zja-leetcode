@@ -118,18 +118,13 @@ impl Solution {
 }
 
 #[test]
-fn test1() {
+fn do_test() {
     let tasks = vec![vec![1, 2], vec![2, 4], vec![3, 2], vec![4, 1]];
-
     let expected = vec![0, 2, 3, 1];
 
     assert_eq!(Solution::get_order(tasks), expected);
-}
 
-#[test]
-fn test2() {
     let tasks = vec![vec![7, 10], vec![7, 12], vec![7, 5], vec![7, 4], vec![7, 2]];
-
     let expected = vec![4, 3, 2, 0, 1];
 
     assert_eq!(Solution::get_order(tasks), expected);
