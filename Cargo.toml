@@ -58,6 +58,7 @@ members = [
     "reverse-nodes-in-k-group",
     "reverse-string",
     "roman-to-integer",
+    "same-tree",
     "search-insert-position",
     "set-matrix-zeroes",
     "shared",
