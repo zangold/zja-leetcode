@@ -42,6 +42,7 @@ members = [
     "minimum-time-to-collect-all-apples-in-a-tree",
     "minimum-window-substring",
     "missing-number",
+    "move-zeroes",
     "number-of-1-bits",
     "palindrome-number",
     "pascals-triangle",
