@@ -194,6 +194,13 @@ name = "minimum-rounds-to-complete-all-tasks"
 version = "0.1.0"
 
 [[package]]
+name = "minimum-time-to-collect-all-apples-in-a-tree"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "minimum-window-substring"
 version = "0.1.0"
 
