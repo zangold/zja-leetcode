@@ -47,6 +47,7 @@ members = [
     "missing-number",
     "move-zeroes",
     "number-of-1-bits",
+    "palindrome-linked-list",
     "palindrome-number",
     "pascals-triangle",
     "permutations",
