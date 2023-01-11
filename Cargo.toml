@@ -22,6 +22,7 @@ members = [
     "group-anagrams",
     "happy-number",
     "integer-to-roman",
+    "intersection-of-two-arrays-ii",
     "jump-game",
     "letter-combinations-of-a-phone-number",
     "longest-common-prefix",
