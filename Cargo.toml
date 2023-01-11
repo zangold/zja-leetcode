@@ -76,6 +76,7 @@ members = [
     "valid-parentheses",
     "valid-sudoku",
     "wildcard-matching",
+    "word-break",
     "word-pattern",
     "word-search",
     "word-search-ii",

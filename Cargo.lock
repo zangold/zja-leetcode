@@ -399,6 +399,13 @@ name = "wildcard-matching"
 version = "0.1.0"
 
 [[package]]
+name = "word-break"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "word-pattern"
 version = "0.1.0"
 
