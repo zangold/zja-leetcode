@@ -11,6 +11,13 @@ name = "all-paths-from-source-to-target"
 version = "0.1.0"
 
 [[package]]
+name = "best-time-to-buy-and-sell-stock"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "binary-tree-inorder-traversal"
 version = "0.1.0"
 
