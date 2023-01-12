@@ -73,6 +73,7 @@ members = [
     "shared",
     "single-number",
     "single-threaded-cpu",
+    "spiral-matrix",
     "sqrtx",
     "string-to-integer-atoi",
     "symmetric-tree",

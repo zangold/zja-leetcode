@@ -402,6 +402,13 @@ name = "single-threaded-cpu"
 version = "0.1.0"
 
 [[package]]
+name = "spiral-matrix"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "sqrtx"
 version = "0.1.0"
 
