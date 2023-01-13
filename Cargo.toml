@@ -72,6 +72,7 @@ members = [
     "rotate-image",
     "same-tree",
     "search-insert-position",
+    "serialize-and-deserialize-binary-tree",
     "set-matrix-zeroes",
     "shared",
     "single-number",

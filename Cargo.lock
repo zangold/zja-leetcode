@@ -407,6 +407,13 @@ name = "search-insert-position"
 version = "0.1.0"
 
 [[package]]
+name = "serialize-and-deserialize-binary-tree"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "set-matrix-zeroes"
 version = "0.1.0"
 
