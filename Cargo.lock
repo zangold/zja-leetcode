@@ -174,6 +174,13 @@ name = "longest-palindromic-substring"
 version = "0.1.0"
 
 [[package]]
+name = "longest-path-with-different-adjacent-characters"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "longest-subsequence-with-limited-sum"
 version = "0.1.0"
 

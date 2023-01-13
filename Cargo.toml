@@ -31,6 +31,7 @@ members = [
     "longest-common-prefix",
     "longest-increasing-path-in-a-matrix",
     "longest-palindromic-substring",
+    "longest-path-with-different-adjacent-characters",
     "longest-subsequence-with-limited-sum",
     "longest-substring-without-repeating-characters",
     "max-points-on-a-line",
