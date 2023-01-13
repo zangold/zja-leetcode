@@ -22,6 +22,13 @@ name = "binary-tree-inorder-traversal"
 version = "0.1.0"
 
 [[package]]
+name = "binary-tree-maximum-path-sum"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"

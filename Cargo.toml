@@ -4,6 +4,7 @@ members = [
     "all-paths-from-source-to-target",
     "best-time-to-buy-and-sell-stock",
     "binary-tree-inorder-traversal",
+    "binary-tree-maximum-path-sum",
     "climb-stairs",
     "construct-binary-tree-from-preorder-and-inorder-traversal",
     "container-with-most-water",
