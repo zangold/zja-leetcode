@@ -29,6 +29,7 @@ members = [
     "intersection-of-two-arrays-ii",
     "jump-game",
     "letter-combinations-of-a-phone-number",
+    "lexicographically-smallest-equivalent-string",
     "longest-common-prefix",
     "longest-increasing-path-in-a-matrix",
     "longest-palindromic-substring",
