@@ -72,6 +72,7 @@ members = [
     "roman-to-integer",
     "rotate-image",
     "same-tree",
+    "search-in-rotated-sorted-array",
     "search-insert-position",
     "serialize-and-deserialize-binary-tree",
     "set-matrix-zeroes",

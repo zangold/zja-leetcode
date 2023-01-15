@@ -410,6 +410,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "search-in-rotated-sorted-array"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "search-insert-position"
 version = "0.1.0"
 
