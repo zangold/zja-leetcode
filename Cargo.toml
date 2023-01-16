@@ -25,6 +25,7 @@ members = [
     "generate-parentheses",
     "group-anagrams",
     "happy-number",
+    "insert-interval",
     "integer-to-roman",
     "intersection-of-two-arrays-ii",
     "jump-game",
