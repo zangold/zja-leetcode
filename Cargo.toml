@@ -21,6 +21,7 @@ members = [
     "first-missing-positive",
     "first-unique-character-in-a-string",
     "fizz-buzz",
+    "flip-string-to-monotone-increasing",
     "gas-station",
     "generate-parentheses",
     "group-anagrams",
