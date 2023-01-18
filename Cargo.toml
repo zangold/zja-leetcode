@@ -96,6 +96,7 @@ members = [
     "valid-palindrome",
     "valid-parentheses",
     "valid-sudoku",
+    "validate-binary-search-tree",
     "wildcard-matching",
     "word-break",
     "word-pattern",

@@ -97,7 +97,9 @@ pub fn tree_serialize(root: Option<Rc<RefCell<TreeNode>>>) -> String {
     ser + "]"
 }
 
-fn tree_deserialize(mut data: String) -> Option<Rc<RefCell<TreeNode>>> {
+pub fn tree_deserialize(data: &str) -> Option<Rc<RefCell<TreeNode>>> {
+    let mut data = data.to_string();
+
     // remove the []
     data.pop();
     data.remove(0);
@@ -157,7 +159,7 @@ fn tree_deserialize(mut data: String) -> Option<Rc<RefCell<TreeNode>>> {
 #[test]
 fn test_serialize_deserialize() {
     let input = "[1,2,3,null,null,4,5]".to_string();
-    let deser = tree_deserialize(input.clone());
+    let deser = tree_deserialize(&input);
     let expected = Some(Rc::new(RefCell::new(TreeNode {
         val: 1,
         left: Some(Rc::new(RefCell::new(TreeNode::new(2)))),
@@ -173,7 +175,7 @@ fn test_serialize_deserialize() {
     assert_eq!(input, ser);
 
     let input = "[]".to_string();
-    let deser = tree_deserialize(input.clone());
+    let deser = tree_deserialize(&input);
     let expected = None;
 
     assert_eq!(deser, expected);
@@ -194,5 +196,5 @@ fn test_serialize_deserialize() {
         }))),
     })));
 
-    assert_eq!(tree_deserialize(tree_serialize(tree.clone())), tree);
+    assert_eq!(tree_deserialize(&tree_serialize(tree.clone())), tree);
 }
