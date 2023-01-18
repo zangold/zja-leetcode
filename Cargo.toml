@@ -17,6 +17,7 @@ members = [
     "excel-sheet-column-number",
     "find-first-and-last-position-of-element-in-sorted-array",
     "find-median-from-data-stream",
+    "find-peak-element",
     "find-the-index-of-the-first-occurrence-in-a-string",
     "first-missing-positive",
     "first-unique-character-in-a-string",

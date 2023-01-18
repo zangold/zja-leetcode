@@ -92,6 +92,13 @@ name = "find-median-from-data-stream"
 version = "0.1.0"
 
 [[package]]
+name = "find-peak-element"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "find-the-index-of-the-first-occurrence-in-a-string"
 version = "0.1.0"
 
