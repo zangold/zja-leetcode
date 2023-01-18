@@ -85,6 +85,7 @@ members = [
     "single-number",
     "single-threaded-cpu",
     "sort-colors",
+    "sort-list",
     "spiral-matrix",
     "sqrtx",
     "string-to-integer-atoi",
