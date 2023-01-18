@@ -494,6 +494,13 @@ name = "string-to-integer-atoi"
 version = "0.1.0"
 
 [[package]]
+name = "subsets"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "symmetric-tree"
 version = "0.1.0"
 
