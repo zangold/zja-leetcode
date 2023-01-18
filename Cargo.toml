@@ -43,6 +43,7 @@ members = [
     "maximum-bags-with-full-capacity-of-rocks",
     "maximum-depth-of-binary-tree",
     "maximum-ice-cream-bars",
+    "maximum-sum-circular-subarray",
     "median-of-two-sorted-arrays",
     "merge-k-sorted-lists",
     "merge-sorted-array",
