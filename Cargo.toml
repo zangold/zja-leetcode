@@ -51,6 +51,7 @@ members = [
     "merge-k-sorted-lists",
     "merge-sorted-array",
     "merge-two-sorted-lists",
+    "min-stack",
     "minimum-number-of-arrows-to-burst-balloons",
     "minimum-rounds-to-complete-all-tasks",
     "minimum-time-to-collect-all-apples-in-a-tree",

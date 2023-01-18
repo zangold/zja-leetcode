@@ -284,6 +284,13 @@ name = "merge-two-sorted-lists"
 version = "0.1.0"
 
 [[package]]
+name = "min-stack"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "minimum-number-of-arrows-to-burst-balloons"
 version = "0.1.0"
 
