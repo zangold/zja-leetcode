@@ -52,6 +52,8 @@ doctest = false
 EOF
 
 cat > $NEW_CRATE/src/lib.rs << EOF
+// Problem description: https://leetcode.com/problems/$NEW_CRATE/
+
 #![allow(dead_code)]
 
 struct Solution;

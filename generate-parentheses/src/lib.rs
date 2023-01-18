@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/generate-parentheses/
+
 #![allow(dead_code)]
 
 use std::collections::HashSet;

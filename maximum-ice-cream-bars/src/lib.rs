@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/maximum-ice-cream-bars/
+
 #![allow(dead_code)]
 
 struct Solution;

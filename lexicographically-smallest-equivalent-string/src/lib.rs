@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/lexicographically-smallest-equivalent-string/
+
 #![allow(dead_code)]
 
 struct Solution;

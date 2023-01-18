@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/single-threaded-cpu/
+
 #![allow(dead_code)]
 
 use std::{cmp::Ordering, collections::BinaryHeap};

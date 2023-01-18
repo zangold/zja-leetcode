@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/missing-number/
+
 #![allow(dead_code)]
 
 struct Solution;

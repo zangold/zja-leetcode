@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/power-of-three/
+
 #![allow(dead_code)]
 
 struct Solution;

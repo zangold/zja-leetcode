@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/
+
 #![allow(dead_code)]
 
 struct Solution;

@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/longest-path-with-different-adjacent-characters/
+
 #![allow(dead_code)]
 
 struct Solution;

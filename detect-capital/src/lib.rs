@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/detect-capital/
+
 #![allow(dead_code)]
 
 struct Solution;

@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/pascals-triangle/
+
 #![allow(dead_code)]
 
 struct Solution;

@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/number-of-good-paths/
+
 #![allow(dead_code)]
 
 struct Solution;

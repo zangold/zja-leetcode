@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/merge-intervals/
+
 #![allow(dead_code)]
 
 struct Solution;

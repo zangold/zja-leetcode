@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/min-stack/
+
 #![allow(dead_code)]
 
 struct MinStack {

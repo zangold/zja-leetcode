@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
 #![allow(dead_code)]
 
 struct Solution;

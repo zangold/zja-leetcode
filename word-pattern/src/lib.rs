@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/word-pattern/
+
 #![allow(dead_code)]
 
 use std::collections::HashSet;

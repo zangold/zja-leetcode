@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/single-number/
+
 #![allow(dead_code)]
 
 use std::collections::HashSet;

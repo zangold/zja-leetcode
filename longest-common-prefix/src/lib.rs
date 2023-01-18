@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/longest-common-prefix/
+
 #![allow(dead_code)]
 
 struct Solution;
