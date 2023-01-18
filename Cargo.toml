@@ -83,6 +83,7 @@ members = [
     "shared",
     "single-number",
     "single-threaded-cpu",
+    "sort-colors",
     "spiral-matrix",
     "sqrtx",
     "string-to-integer-atoi",

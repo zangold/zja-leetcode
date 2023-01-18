@@ -472,6 +472,13 @@ name = "single-threaded-cpu"
 version = "0.1.0"
 
 [[package]]
+name = "sort-colors"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "spiral-matrix"
 version = "0.1.0"
 dependencies = [
