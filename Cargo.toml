@@ -45,6 +45,7 @@ members = [
     "maximum-ice-cream-bars",
     "maximum-sum-circular-subarray",
     "median-of-two-sorted-arrays",
+    "merge-intervals",
     "merge-k-sorted-lists",
     "merge-sorted-array",
     "merge-two-sorted-lists",

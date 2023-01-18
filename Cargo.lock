@@ -251,6 +251,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "merge-intervals"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "merge-k-sorted-lists"
 version = "0.1.0"
 
