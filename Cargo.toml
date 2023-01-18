@@ -22,6 +22,7 @@ members = [
     "first-unique-character-in-a-string",
     "fizz-buzz",
     "flip-string-to-monotone-increasing",
+    "game-of-life",
     "gas-station",
     "generate-parentheses",
     "group-anagrams",
