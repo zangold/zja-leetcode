@@ -40,6 +40,7 @@ members = [
     "longest-path-with-different-adjacent-characters",
     "longest-subsequence-with-limited-sum",
     "longest-substring-without-repeating-characters",
+    "lru-cache",
     "max-points-on-a-line",
     "max-sliding-window",
     "maximum-bags-with-full-capacity-of-rocks",

@@ -231,6 +231,13 @@ name = "longest-substring-without-repeating-characters"
 version = "0.1.0"
 
 [[package]]
+name = "lru-cache"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "max-points-on-a-line"
 version = "0.1.0"
 
