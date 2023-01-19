@@ -616,6 +616,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "word-ladder"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "word-pattern"
 version = "0.1.0"
 

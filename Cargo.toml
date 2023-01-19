@@ -107,6 +107,7 @@ members = [
     "validate-binary-search-tree",
     "wildcard-matching",
     "word-break",
+    "word-ladder",
     "word-pattern",
     "word-search",
     "word-search-ii",
