@@ -94,6 +94,7 @@ members = [
     "spiral-matrix",
     "sqrtx",
     "string-to-integer-atoi",
+    "subarray-sums-divisible-by-k",
     "subsets",
     "symmetric-tree",
     "three-sum",
