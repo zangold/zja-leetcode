@@ -81,6 +81,7 @@ members = [
     "reverse-nodes-in-k-group",
     "reverse-string",
     "roman-to-integer",
+    "rotate-array",
     "rotate-image",
     "same-tree",
     "search-in-rotated-sorted-array",

@@ -473,6 +473,13 @@ name = "roman-to-integer"
 version = "0.1.0"
 
 [[package]]
+name = "rotate-array"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "rotate-image"
 version = "0.1.0"
 dependencies = [
