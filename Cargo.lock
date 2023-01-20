@@ -61,6 +61,13 @@ name = "count-of-smaller-numbers-after-self"
 version = "0.1.0"
 
 [[package]]
+name = "count-primes"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "delete-columns-to-make-sorted"
 version = "0.1.0"
 
