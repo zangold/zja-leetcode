@@ -179,6 +179,13 @@ name = "happy-number"
 version = "0.1.0"
 
 [[package]]
+name = "house-robber"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "insert-interval"
 version = "0.1.0"
 dependencies = [
