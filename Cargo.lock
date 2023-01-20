@@ -338,6 +338,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "non-decreasing-subsequences"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "number-of-1-bits"
 version = "0.1.0"
 
