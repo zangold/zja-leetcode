@@ -14,6 +14,7 @@ members = [
     "detect-capital",
     "divide-two-integers",
     "domino-and-tromino-tiling",
+    "evaluate-reverse-polish-notation",
     "excel-sheet-column-number",
     "find-first-and-last-position-of-element-in-sorted-array",
     "find-median-from-data-stream",
