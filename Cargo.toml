@@ -78,6 +78,7 @@ members = [
     "remove-duplicates-from-sorted-array",
     "remove-nth-node-from-end-of-list",
     "remove-stones-to-minimize-the-total",
+    "restore-ip-addresses",
     "reverse-bits",
     "reverse-integer",
     "reverse-linked-list",
