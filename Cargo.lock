@@ -606,6 +606,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "sum-of-two-integers"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "symmetric-tree"
 version = "0.1.0"
 

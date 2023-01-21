@@ -103,6 +103,7 @@ members = [
     "string-to-integer-atoi",
     "subarray-sums-divisible-by-k",
     "subsets",
+    "sum-of-two-integers",
     "symmetric-tree",
     "three-sum",
     "two-sum",
