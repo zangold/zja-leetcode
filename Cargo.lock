@@ -395,6 +395,13 @@ name = "palindrome-number"
 version = "0.1.0"
 
 [[package]]
+name = "palindrome-partitioning"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "pascals-triangle"
 version = "0.1.0"
 

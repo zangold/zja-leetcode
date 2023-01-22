@@ -69,6 +69,7 @@ members = [
     "number-of-nodes-in-the-sub-tree-with-the-same-label",
     "palindrome-linked-list",
     "palindrome-number",
+    "palindrome-partitioning",
     "pascals-triangle",
     "permutations",
     "plus-one",
