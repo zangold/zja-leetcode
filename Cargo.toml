@@ -107,6 +107,7 @@ members = [
     "symmetric-tree",
     "three-sum",
     "two-sum",
+    "unique-paths",
     "unique-paths-iii",
     "valid-anagram",
     "valid-palindrome",

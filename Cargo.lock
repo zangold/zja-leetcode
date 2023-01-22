@@ -625,6 +625,13 @@ name = "two-sum"
 version = "0.1.0"
 
 [[package]]
+name = "unique-paths"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "unique-paths-iii"
 version = "0.1.0"
 
