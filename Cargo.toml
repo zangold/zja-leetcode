@@ -2,6 +2,7 @@
 members = [
     "add-two-numbers",
     "all-paths-from-source-to-target",
+    "basic-calculator-ii",
     "best-time-to-buy-and-sell-stock",
     "binary-tree-inorder-traversal",
     "binary-tree-maximum-path-sum",
