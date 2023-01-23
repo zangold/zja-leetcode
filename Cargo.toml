@@ -22,6 +22,7 @@ members = [
     "find-first-and-last-position-of-element-in-sorted-array",
     "find-median-from-data-stream",
     "find-peak-element",
+    "find-the-duplicate-number",
     "find-the-index-of-the-first-occurrence-in-a-string",
     "find-the-town-judge",
     "first-missing-positive",
