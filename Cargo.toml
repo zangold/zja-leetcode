@@ -13,6 +13,7 @@ members = [
     "convert-sorted-array-to-binary-search-tree",
     "count-of-smaller-numbers-after-self",
     "count-primes",
+    "course-schedule",
     "delete-columns-to-make-sorted",
     "detect-capital",
     "divide-two-integers",

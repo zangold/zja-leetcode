@@ -82,6 +82,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "course-schedule"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "delete-columns-to-make-sorted"
 version = "0.1.0"
 
