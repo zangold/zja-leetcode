@@ -22,6 +22,7 @@ members = [
     "find-median-from-data-stream",
     "find-peak-element",
     "find-the-index-of-the-first-occurrence-in-a-string",
+    "find-the-town-judge",
     "first-missing-positive",
     "first-unique-character-in-a-string",
     "fizz-buzz",
