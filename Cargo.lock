@@ -441,6 +441,13 @@ name = "pascals-triangle"
 version = "0.1.0"
 
 [[package]]
+name = "perfect-squares"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "permutations"
 version = "0.1.0"
 

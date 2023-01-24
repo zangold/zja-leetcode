@@ -76,6 +76,7 @@ members = [
     "palindrome-number",
     "palindrome-partitioning",
     "pascals-triangle",
+    "perfect-squares",
     "permutations",
     "plus-one",
     "power-of-three",
