@@ -605,6 +605,13 @@ name = "single-threaded-cpu"
 version = "0.1.0"
 
 [[package]]
+name = "snakes-and-ladders"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "sort-colors"
 version = "0.1.0"
 dependencies = [

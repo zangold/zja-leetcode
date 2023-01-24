@@ -102,6 +102,7 @@ members = [
     "shared",
     "single-number",
     "single-threaded-cpu",
+    "snakes-and-ladders",
     "sort-colors",
     "sort-list",
     "spiral-matrix",
