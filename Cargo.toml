@@ -116,6 +116,7 @@ members = [
     "sum-of-two-integers",
     "symmetric-tree",
     "three-sum",
+    "top-k-frequent-elements",
     "two-sum",
     "unique-paths",
     "unique-paths-iii",
