@@ -89,6 +89,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "decode-ways"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "delete-columns-to-make-sorted"
 version = "0.1.0"
 
