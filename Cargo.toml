@@ -20,6 +20,7 @@ members = [
     "domino-and-tromino-tiling",
     "evaluate-reverse-polish-notation",
     "excel-sheet-column-number",
+    "factorial-trailing-zeroes",
     "find-first-and-last-position-of-element-in-sorted-array",
     "find-median-from-data-stream",
     "find-peak-element",

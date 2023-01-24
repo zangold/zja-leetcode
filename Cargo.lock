@@ -119,6 +119,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "factorial-trailing-zeroes"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "find-first-and-last-position-of-element-in-sorted-array"
 version = "0.1.0"
 
