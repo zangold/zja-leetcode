@@ -106,6 +106,7 @@ members = [
     "serialize-and-deserialize-binary-tree",
     "set-matrix-zeroes",
     "shared",
+    "shuffle-an-array",
     "single-number",
     "single-threaded-cpu",
     "snakes-and-ladders",

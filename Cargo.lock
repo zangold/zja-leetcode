@@ -639,6 +639,14 @@ name = "shared"
 version = "0.1.0"
 
 [[package]]
+name = "shuffle-an-array"
+version = "0.1.0"
+dependencies = [
+ "rand",
+ "shared",
+]
+
+[[package]]
 name = "single-number"
 version = "0.1.0"
 
