@@ -242,6 +242,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "implement-trie-prefix-tree"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "insert-interval"
 version = "0.1.0"
 dependencies = [

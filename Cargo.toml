@@ -39,6 +39,7 @@ members = [
     "group-anagrams",
     "happy-number",
     "house-robber",
+    "implement-trie-prefix-tree",
     "insert-interval",
     "integer-to-roman",
     "intersection-of-two-arrays-ii",
