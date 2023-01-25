@@ -74,6 +74,7 @@ members = [
     "non-decreasing-subsequences",
     "number-of-1-bits",
     "number-of-good-paths",
+    "number-of-islands",
     "number-of-nodes-in-the-sub-tree-with-the-same-label",
     "palindrome-linked-list",
     "palindrome-number",

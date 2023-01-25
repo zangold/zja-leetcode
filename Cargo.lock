@@ -433,6 +433,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "number-of-islands"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "number-of-nodes-in-the-sub-tree-with-the-same-label"
 version = "0.1.0"
 dependencies = [
