@@ -71,6 +71,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "count-and-say"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "count-of-smaller-numbers-after-self"
 version = "0.1.0"
 
