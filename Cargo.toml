@@ -119,6 +119,7 @@ members = [
     "subarray-sums-divisible-by-k",
     "subsets",
     "sum-of-two-integers",
+    "surrounded-regions",
     "symmetric-tree",
     "three-sum",
     "top-k-frequent-elements",
