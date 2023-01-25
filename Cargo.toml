@@ -44,6 +44,7 @@ members = [
     "integer-to-roman",
     "intersection-of-two-arrays-ii",
     "jump-game",
+    "largest-number",
     "letter-combinations-of-a-phone-number",
     "lexicographically-smallest-equivalent-string",
     "longest-common-prefix",
