@@ -7,6 +7,7 @@ members = [
     "binary-tree-inorder-traversal",
     "binary-tree-level-order-traversal",
     "binary-tree-maximum-path-sum",
+    "cheapest-flights-within-k-stops",
     "climb-stairs",
     "coin-change",
     "construct-binary-tree-from-preorder-and-inorder-traversal",
