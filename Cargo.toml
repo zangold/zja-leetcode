@@ -5,6 +5,7 @@ members = [
     "basic-calculator-ii",
     "best-time-to-buy-and-sell-stock",
     "binary-tree-inorder-traversal",
+    "binary-tree-level-order-traversal",
     "binary-tree-maximum-path-sum",
     "climb-stairs",
     "coin-change",
