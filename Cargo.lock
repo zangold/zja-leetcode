@@ -67,6 +67,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "concatenated-words"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "construct-binary-tree-from-preorder-and-inorder-traversal"
 version = "0.1.0"
 dependencies = [

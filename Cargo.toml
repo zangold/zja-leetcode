@@ -10,6 +10,7 @@ members = [
     "cheapest-flights-within-k-stops",
     "climb-stairs",
     "coin-change",
+    "concatenated-words",
     "construct-binary-tree-from-preorder-and-inorder-traversal",
     "container-with-most-water",
     "convert-sorted-array-to-binary-search-tree",
