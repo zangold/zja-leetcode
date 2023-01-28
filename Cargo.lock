@@ -117,6 +117,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "data-stream-as-disjoint-intervals"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "decode-ways"
 version = "0.1.0"
 dependencies = [

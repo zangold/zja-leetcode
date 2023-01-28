@@ -18,6 +18,7 @@ members = [
     "count-of-smaller-numbers-after-self",
     "count-primes",
     "course-schedule",
+    "data-stream-as-disjoint-intervals",
     "decode-ways",
     "delete-columns-to-make-sorted",
     "detect-capital",
