@@ -48,6 +48,7 @@ members = [
     "insert-interval",
     "integer-to-roman",
     "intersection-of-two-arrays-ii",
+    "isomorphic-strings",
     "jump-game",
     "largest-number",
     "length-of-last-word",

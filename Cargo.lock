@@ -302,6 +302,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "isomorphic-strings"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "jump-game"
 version = "0.1.0"
 
