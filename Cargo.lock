@@ -532,6 +532,13 @@ name = "pascals-triangle"
 version = "0.1.0"
 
 [[package]]
+name = "pascals-triangle-ii"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "perfect-squares"
 version = "0.1.0"
 dependencies = [

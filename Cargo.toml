@@ -89,6 +89,7 @@ members = [
     "palindrome-number",
     "palindrome-partitioning",
     "pascals-triangle",
+    "pascals-triangle-ii",
     "perfect-squares",
     "permutations",
     "plus-one",
