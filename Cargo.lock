@@ -313,6 +313,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "length-of-last-word"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "letter-combinations-of-a-phone-number"
 version = "0.1.0"
 

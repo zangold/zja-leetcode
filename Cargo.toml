@@ -50,6 +50,7 @@ members = [
     "intersection-of-two-arrays-ii",
     "jump-game",
     "largest-number",
+    "length-of-last-word",
     "letter-combinations-of-a-phone-number",
     "lexicographically-smallest-equivalent-string",
     "longest-common-prefix",
